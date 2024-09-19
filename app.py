@@ -2,7 +2,7 @@ import streamlit as st
 from configparser import ConfigParser
 from chatbot import ChatBot
 
-@st.cache_data  # Caches the results of this function
+@st.cache_data  # Caches the results of this functions
 def get_chatbot_response(api_key, prompt):
     chatbot = ChatBot(api_key=api_key)
     chatbot.start_conversation()
